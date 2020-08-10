@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const VisibilityControl = ({ isChecked, callBack, description }) => (
   <div className="form-check">
@@ -12,5 +13,11 @@ const VisibilityControl = ({ isChecked, callBack, description }) => (
     <label htmlFor="form-check-label">Show {description}</label>
   </div>
 );
+
+VisibilityControl.propTypes = {
+  isChecked: PropTypes.bool.isRequired,
+  callBack: PropTypes.func.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default VisibilityControl;

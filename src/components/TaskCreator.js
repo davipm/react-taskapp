@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+
+TaskCreator.propTypes = {
+  callBack: PropTypes.func.isRequired,
+};
 
 function TaskCreator({ callBack }) {
   const [newTaskName, setNewTaskName] = useState("");
