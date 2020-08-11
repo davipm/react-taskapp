@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task Banner component should take snapshot 1`] = `
+<div>
+  <h4
+    class="bg-primary text-white text-center p-4"
+    data-testid="title"
+  >
+    Davi Pereira
+    's Tasks App (
+    3
+    ) tasks to do.
+  </h4>
+</div>
+`;
