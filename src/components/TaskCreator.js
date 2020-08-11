@@ -29,7 +29,7 @@ function TaskCreator({ callBack }) {
           onChange={updateNewTaskName}
         />
 
-        <button className="btn btn-primary ml-3" type="submit">
+        <button className="btn btn-primary ml-3" type="submit" data-testid="submit">
           Add
         </button>
       </form>
