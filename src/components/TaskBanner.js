@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const TaskBanner = ({ userName, taskItems }) => (
-  <h4 className="bg-primary text-white text-center p-4">
+  <h4 className="bg-primary text-white text-center p-4" data-testid="title">
     {userName}'s Tasks App ({taskItems.filter((task) => !task.done).length})
     tasks to do.
   </h4>
@@ -10,11 +10,13 @@ const TaskBanner = ({ userName, taskItems }) => (
 
 TaskBanner.propTypes = {
   userName: PropTypes.string.isRequired,
-  taskItems: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    done: PropTypes.bool.isRequired,
-    id: PropTypes.number.isRequired,
-  }).isRequired,
+  taskItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      done: PropTypes.bool,
+      id: PropTypes.number,
+    }),
+  ).isRequired,
 };
 
 export default TaskBanner;
