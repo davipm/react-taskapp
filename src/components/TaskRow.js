@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TaskRow = ({ task, toggleTask, removeTask }) => (
   <tr key={task.id}>
@@ -19,5 +20,15 @@ const TaskRow = ({ task, toggleTask, removeTask }) => (
     </td>
   </tr>
 )
+
+TaskRow.propTypes = {
+  toggleTask: PropTypes.func.isRequired,
+  removeTask: PropTypes.func.isRequired,
+  task: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    done: PropTypes.bool.isRequired,
+  }).isRequired
+}
 
 export default TaskRow;
