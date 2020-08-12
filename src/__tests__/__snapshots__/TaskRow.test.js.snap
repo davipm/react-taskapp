@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <TaskRow /> component should take snapshot 1`] = `
+<div>
+  <tr
+    data-testid="task-row"
+  >
+    <td
+      data-testid="task-name"
+    >
+      Task One
+    </td>
+    <td>
+      <input
+        data-testid="toggle"
+        type="checkbox"
+      />
+      <button
+        class="btn btn-danger ml-3"
+        data-testid="submit"
+      >
+        Remove
+      </button>
+    </td>
+  </tr>
+</div>
+`;
