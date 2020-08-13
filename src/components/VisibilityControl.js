@@ -7,6 +7,7 @@ const VisibilityControl = ({ isChecked, callBack, description }) => (
       type="checkbox"
       className="form-check-input"
       id="form-check-label"
+      data-testid="visibility"
       checked={isChecked}
       onChange={(event) => callBack(event.target.value)}
     />
