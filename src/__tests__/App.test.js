@@ -21,9 +21,4 @@ describe("<App />", function () {
     fireEvent.click(screen.getByTestId("visibility"));
     expect(queryByText("Task Three")).toBeInTheDocument();
   });
-
-  it("should create new task", function () {
-    const { queryByText } = render(<App />);
-    const createNewTask = jest.fn();
-  });
 });
