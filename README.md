@@ -7,6 +7,7 @@ frontend app tasks with data persist
 * React
 * Local Storage
 * Bootstrap
+* Jest
 
 ## Authors
 
