@@ -1,6 +1,6 @@
 # React task app
 
-frontend app tasks with data persist
+frontend app for tasks with data persist
 
 ## Built With
 
